@@ -26,6 +26,12 @@ Size: 10,015 training, 193 validation, and 1,512 test images.
 
 Classes: 7 skin lesion types (e.g., Melanoma: 1,113, Nevus: 6,705, Dermatofibroma: 115), highly imbalanced.
 
+Access: Due to its large size (~2.5 GBs), the dataset is hosted on Google Drive. Download it here:
+
+ISIC 2018 Dataset (https://drive.google.com/file/d/1pIKslaOiSq1BQKqPcdFiWziUyNVnWI4R/view?usp=drive_link).
+
+Instructions: Download the folder, extract it, and place it in the same directory as Project_Final3.ipynb.
+
 Challenges: Class imbalance, inter-class similarities (e.g., Melanoma vs. Nevus), and variable image quality.
 
 
@@ -78,6 +84,35 @@ SSL: BYOL outperformed with 82% accuracy (50% labeled data), showing superior ge
 Class Imbalance: Focal loss and class weights mitigated bias, though inter-class similarities (e.g., MEL vs. BKL) remained challenging.
 
 Scalability: SSL reduced reliance on labeled data, with BYOL converging faster than SimCLR.
+
+**Setup******
+
+Clone the repository:
+
+bash
+
+git clone https://github.com/[your-username]/skin-cancer-classification.git
+Install dependencies:
+bash
+
+pip install tensorflow keras numpy matplotlib seaborn scikit-learn
+
+**Download the dataset:**
+
+Get the ISIC 2018 dataset from Google Drive.
+
+Extract and place it in the repo directory.
+
+
+**Usage**
+
+Run the notebook to preprocess data, train models, and evaluate results:
+
+bash
+
+jupyter notebook Project_Final3.ipynb
+
+
 
 **Results**
 
